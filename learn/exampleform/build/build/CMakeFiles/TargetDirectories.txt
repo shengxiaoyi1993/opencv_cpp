@@ -1,3 +1,0 @@
-/home/sxy/github-project/opencv_cpp/learn/exampleform/build/build/CMakeFiles/rebuild_cache.dir
-/home/sxy/github-project/opencv_cpp/learn/exampleform/build/build/CMakeFiles/edit_cache.dir
-/home/sxy/github-project/opencv_cpp/learn/exampleform/build/build/CMakeFiles/example.dir
