@@ -1,5 +1,5 @@
 OPENCV_FILE=opencv-3.4.1.zip
-OPENCV_PATH=3.4.1
+OPENCV_PATH=opencv-3.4.1
 
 all:
 	rm $(OPENCV_FILE)* -rf
