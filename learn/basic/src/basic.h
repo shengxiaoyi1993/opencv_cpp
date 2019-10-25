@@ -24,8 +24,14 @@ void printMatNum(const Mat image);
 std::vector<int> getMaxValueList(const Mat array);
 
 
+void printMatInfo(Mat mat);
+
+void showMatTransform(const Mat Image);
 
 }
+
+
+
 
 
 

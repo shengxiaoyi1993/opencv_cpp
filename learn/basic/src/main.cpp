@@ -7,35 +7,31 @@
 #include<fstream>
 #include <stdlib.h>
 #include<stdlib.h>
-
-
-
+#include"basic.h"
 
 //#define DEBUG
 using namespace std;
 using namespace cv;
 
-
-
-std::vector<int> getMaxValueList(const Mat array){
-    std::vector<int>  list_value;
-    int cols=array.cols;
-    int rows=array.rows;
-    for(int r=0;r<rows;r++){
-        int max=0;
-        for(int c=0;c<cols;c++){
-            int value=int(array.at<int>(r,c));
-            max=max>value?max:value;
-        }
-        list_value.push_back(max);
-    }
-    return list_value;
-}
-
-
 int main()
 {
+    Mat mat_tmp=imread("../../../resource/thumb.jpg",IMREAD_REDUCED_COLOR_2);
+    imshow("mat_tmp",mat_tmp);
 
+    basic::printMatInfo(mat_tmp);
+    Mat image_hsv;
+
+//    cvtColor(mat_tmp, image_hsv, CV_RGB2HSV);
+//    imshow("image_hsv",image_hsv);
+
+    basic::showMatTransform(mat_tmp);
+
+
+
+
+    waitKey(0);
 
     return 0;
 }
+
+

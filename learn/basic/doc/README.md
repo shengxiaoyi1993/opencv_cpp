@@ -2,5 +2,11 @@
 
 # README
 
-- this project is designed to test the opencv-lib and provide a form to build a
-project with similar format.  
+- this project is designed to record the some functions of opencv
+
+## Mat 
+
+#### depth
+- the type of pix element
+#### type
+- the type of all channels
