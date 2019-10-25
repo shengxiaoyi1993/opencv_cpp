@@ -1,0 +1,29 @@
+cmake_minimum_required(VERSION 2.8)
+
+project(match)
+set( CMAKE_CXX_FLAGS "-std=c++11" )
+
+add_executable(${PROJECT_NAME} "../src/main.cpp" "../src/orbmatch.cpp")
+
+message(${PROJECT_SOURCE_DIR})
+set(PROJECT_INIT_PATH "/home/sxy/Personal/github/opencv_cpp" )
+
+set(Opencv_INCLUDE_DIRS "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/include")
+set(Opencv_LIBRARIES_DIRS "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/lib64")
+
+set(Opencv_LIBs
+    "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/lib64/libopencv_highgui.so"
+    "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/lib64/libopencv_imgproc.so"
+    "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/lib64/libopencv_imgcodecs.so"
+    "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/lib64/libopencv_core.so"
+    "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/lib64/libopencv_video.so"
+    "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/lib64/libopencv_videostab.so"
+    "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/lib64/libopencv_videoio.so"
+    "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/lib64/libopencv_features2d.so"
+    "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/lib64/libopencv_flann.so"
+
+    )
+message(${Opencv_LIBRARIES_DIRS})
+include_directories(${Opencv_INCLUDE_DIRS})
+link_directories(${Opencv_LIBRARIES_DIRS})
+target_link_libraries( match "${Opencv_LIBs}")
