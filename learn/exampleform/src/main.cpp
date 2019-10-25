@@ -15,72 +15,227 @@
 using namespace std;
 using namespace cv;
 
+int calMAD(const Mat mat1,const Mat mat2){
+    Size size1=mat1.size();
+    Size size2=mat2.size();
 
-Mat calcGrayHist(const Mat & image) {
-   Mat histogram = Mat::zeros(Size(256,1),CV_32SC1);
-   //256对应的是0~255共计256个像素值
-   //注意，Size对应的是x和y，也就是第一个元数是矩阵的列数
-   int rows = image.rows;
-   //输入图像的行数
-   int cols = image.cols;
-   //输入图像的列数
-   for(int r =0;r<rows;r++) {
-     for(int c = 0;c<cols;c++) {
-       int index = int(image.at<uchar>(r,c)); //获取每个点的像素值
-       histogram.at<int>(0,index) +=1; //获取了一个像素值，在相应的位置上加1
-     }
+    if(size1 != size2){
+        return -1;
     }
-  return histogram;
+    else{
+        double sum=0;
+        for(int r=0;r<size1.height;r++){
+            for(int c=0;c<size1.width;c++){
+                sum+=abs(int(mat1.at<uchar>(r,c))-int(mat2.at<uchar>(r,c)));
+            }
+        }
+        int mad=sum/(size1.height*size1.width);
+        return mad;
+
+    }
+
 }
 
-void printMatNum(const Mat image){
-    cout<<"size:"<<image.size()<<endl;
-    int rows = image.rows;
-    //输入图像的行数
-    int cols = image.cols;
-    //输入图像的列数
-    for(int r =0;r<rows;r++) {
-      for(int c = 0;c<cols;c++) {
-        int index = int(image.at<uchar>(r,c)); //获取每个点的像素值
-        cout<<index<<" ";
-      }
-      cout<<endl;
-     }
-    cout<<endl<<endl;
+double calSSD(const Mat mat1,const Mat mat2){
+    Size size1=mat1.size();
+    Size size2=mat2.size();
+
+    if(size1 != size2){
+        return -1;
+    }
+    else{
+        double sum=0;
+        for(int r=0;r<size1.height;r++){
+            for(int c=0;c<size1.width;c++){
+                int div=(int(mat1.at<uchar>(r,c))-int(mat2.at<uchar>(r,c)));
+                sum+=div*div;
+            }
+        }
+//        double ssd=sum/(size1.height*size1.width);
+        return sum;
+
+    }
+
 }
 
-Mat printHistogram(const Mat array){
-    int cols=256;
-    int rows=1000;
+double calMSD(const Mat mat1,const Mat mat2){
+    Size size1=mat1.size();
+    Size size2=mat2.size();
 
-    Mat table = Mat::zeros(Size(cols,rows),CV_8UC1);
+    if(size1 != size2){
+        return -1;
+    }
+    else{
+        double sum=0;
+        for(int r=0;r<size1.height;r++){
+            for(int c=0;c<size1.width;c++){
+                int div=(int(mat1.at<uchar>(r,c))-int(mat2.at<uchar>(r,c)));
+                sum+=div*div;
+            }
+        }
+        double ssd=sum/(size1.height*size1.width);
+        return ssd;
 
-    for(int r =0;r<cols;r++) {
-      for(int c = 0;c<array.at<int>(0,r);c++) {
-          table.at<int>(r,c)=255;
-          cout<<"h"<<array.at<int>(0,r)<<endl;
-      }
-     }
+    }
 
-
-    return table;
 }
+
+Rect findMostMatchWithMSD(const Mat mat_src,const Mat mat_part){
+    Size size_src=mat_src.size();
+    Size size_part=mat_part.size();
+    int height_div=size_src.height-size_part.width;
+    int width_div=size_src.width-size_part.width;
+    double min_msd=65536;
+    Rect rect_res=Rect(0,0,0,0);
+    for(int r=0;r<height_div;r++){
+        for(int c=0;c<width_div;c++){
+            Rect rect_tmp=Rect(c,r,size_part.width,size_part.height);
+            double tmp=calSSD(mat_src(rect_tmp),mat_part);
+            if(min_msd>tmp){
+                min_msd=tmp;
+                rect_res=rect_tmp;
+            }
+        }
+    }
+    return rect_res;
+}
+
+
+//grayimage
+Rect findMostMatchWithMAD(const Mat mat_src,const Mat mat_part){
+    Size size_src=mat_src.size();
+    Size size_part=mat_part.size();
+    int height_div=size_src.height-size_part.width;
+    int width_div=size_src.width-size_part.width;
+    int min_mad=256;
+    Rect rect_res=Rect(0,0,0,0);
+    for(int r=0;r<height_div;r++){
+        for(int c=0;c<width_div;c++){
+            Rect rect_tmp=Rect(c,r,size_part.width,size_part.height);
+            int tmp=calMAD(mat_src(rect_tmp),mat_part);
+            if(min_mad>tmp){
+                min_mad=tmp;
+                rect_res=rect_tmp;
+            }
+        }
+    }
+    return rect_res;
+}
+
+
+Rect findMostMatchWithSSD(const Mat mat_src,const Mat mat_part){
+    Size size_src=mat_src.size();
+    Size size_part=mat_part.size();
+    int height_div=size_src.height-size_part.width;
+    int width_div=size_src.width-size_part.width;
+    double min_ssd=65536;
+    Rect rect_res=Rect(0,0,0,0);
+    for(int r=0;r<height_div;r++){
+        for(int c=0;c<width_div;c++){
+            Rect rect_tmp=Rect(c,r,size_part.width,size_part.height);
+            double tmp=calSSD(mat_src(rect_tmp),mat_part);
+            if(min_ssd>tmp){
+                min_ssd=tmp;
+                rect_res=rect_tmp;
+            }
+        }
+    }
+    return rect_res;
+}
+
+
+
+int calMean(const Mat src){
+//    cout<<"channels:"<<src.channels()<<endl;
+    int value=(int)(mean(src)[0]);
+    return value;
+}
+
+double calSD(const Mat mat_src){
+    int mean=calMean(mat_src);
+    int cols=mat_src.cols;
+    int rows=mat_src.rows;
+    double sum_sd=0;
+
+    for(int r=0;r<rows;r++){
+        for(int c=0;c<cols;c++){
+            int tmp=(int(mat_src.at<uchar>(r,c))-mean);
+            sum_sd+=tmp*tmp;
+        }
+    }
+    return sum_sd;
+}
+
+
+double calCov(const Mat mat1,const Mat mat2){
+    int cols=mat1.cols;
+    int rows=mat1.rows;
+    int mean1=calMean(mat1);
+    int mean2=calMean(mat2);
+    double sum_cov=0;
+    for(int r=0;r<rows;r++){
+        for(int c=0;c<cols;c++){
+//            int tmp=(int(mat1.at<uchar>(r,c))-mean1);
+            sum_cov+=abs(int(mat1.at<uchar>(r,c))-mean1)*abs(int(mat2.at<uchar>(r,c))-mean2);
+        }
+    }
+    return sum_cov;
+
+}
+
+double calNCC(const Mat mat1,const Mat mat2){
+    double sum_sd_1=calSD(mat1);
+    double sum_sd_2=calSD(mat2);
+    double sum_cov=calCov(mat1,mat2);
+    return sum_cov/(sqrt(sum_sd_1)*sqrt(sum_sd_2));
+}
+
+
+Rect findMostMatchWithNCC(const Mat mat_src,const Mat mat_part){
+    Size size_src=mat_src.size();
+    Size size_part=mat_part.size();
+    int height_div=size_src.height-size_part.width;
+    int width_div=size_src.width-size_part.width;
+    double min_ncc=-1;
+    Rect rect_res=Rect(0,0,0,0);
+    for(int r=0;r<height_div;r++){
+        for(int c=0;c<width_div;c++){
+            Rect rect_tmp=Rect(c,r,size_part.width,size_part.height);
+            double tmp=calNCC(mat_src(rect_tmp),mat_part);
+            if(abs(min_ncc-1)>abs(tmp-1)){
+                min_ncc=tmp;
+                rect_res=rect_tmp;
+            }
+        }
+    }
+    return rect_res;
+}
+
+
 
 int main()
 {
 
-    Mat src = imread("../../../resource/circle_detect.jpg");
+    Mat src = imread("../../../resource/circle_detect.jpg",IMREAD_GRAYSCALE);
+    Mat src_part = imread("../../../resource/circle_detect_part.jpg",IMREAD_GRAYSCALE);
+
     cout<<src.size()<<endl;
     imshow("src",src);
+    imshow("src_part",src_part);
 
 
-    Mat mat_histogram=calcGrayHist(src);
-    printMatNum(mat_histogram);
+    Rect rect=findMostMatchWithNCC(src,src_part);
+    cout<<"x:"<<rect.x
+       <<"y:"<<rect.y
+      <<"width:"<<rect.width
+     <<"height:"<<rect.height<<endl;
 
-    Mat mat_histogram_resize=printHistogram(mat_histogram);
-    imshow("mat_histogram_resize",mat_histogram_resize);
+    rectangle(src, rect, Scalar(255, 0, 0),-1, LINE_8,0);
 
+//    cout<<"mean:"<<calMean(src)<<endl;
+//    cout<<"mean:"<<calMean(src_part)<<endl;
 
+    imshow("src_draw",src);
 
 
     waitKey(0);
