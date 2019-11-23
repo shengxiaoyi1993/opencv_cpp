@@ -44,12 +44,13 @@ void printMatInfo(Mat mat){
     cout<<"elemSize:"<<mat.elemSize()<<endl;
     cout<<"elemSize1:"<<mat.elemSize1()<<endl;
 
-
     cout<<"cols:"<<mat.cols<<endl;
     cout<<"rows:"<<mat.rows<<endl;
     cout<<"isContinuous:"<<mat.isContinuous()<<endl;
 
 }
+
+
 
 void showMatTransform(const Mat Image){
 
