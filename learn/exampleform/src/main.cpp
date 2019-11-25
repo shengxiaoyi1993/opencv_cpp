@@ -50,6 +50,7 @@ void switch_callback(int position)
   cout<<mat_test.cols<<endl;
   cout<<mat_test.rows<<endl;
   int value_threshold=static_cast<int>(1.0*256*position/100);
+  cout<<"value_threshold:"<<value_threshold<<endl;
   threshold(mat_test,mat_test,value_threshold,255,CV_THRESH_BINARY_INV);
   imshow("Example3_7",mat_test);
 
