@@ -116,4 +116,77 @@ void showMatTransform(const Mat Image){
 }
 
 
+double X(Point2i a,Point2i b){
+    return a.x*b.y-b.x*a.y;
+}
+double distance(Point2i a,Point2i b){
+    return sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));
+}
+
+bool cmp(Point2i a,Point2i b,Point2i base)
+{
+    double value=X(a-base,b-base);
+
+    if(value<0){
+        return false;
+    }
+    else if(value >0){
+        return true;
+    }
+    else{
+        if(distance(a,base)>distance(b,base)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+}
+double multi(Point2i p1,Point2i p2,Point2i p3)
+{
+    return X(p2-p1,p3-p1);
+}
+
+std::vector<cv::Point2i> calConvexHull(const std::vector<cv::Point2i>& list_point){
+    //caculate the left-buttom point
+    vector<Point2i> list_referpoint;
+    vector<cv::Point2i> list_res(list_point.size());
+    if(list_point.size()==0||list_point.size()==1||list_point.size()==2){
+        return list_point;
+    }
+    Point2i point_leftbuttom=list_point[0];
+    for(int i=1;i<list_point.size();i++){
+        if(point_leftbuttom.y>list_point[i].y){
+            point_leftbuttom=list_point[i];
+        }
+        else if(point_leftbuttom.y == list_point[i].y){
+            if(point_leftbuttom.x>list_point[i].x){
+                point_leftbuttom=list_point[i];
+            }
+        }
+    }
+
+//sort the point according to the angle of line formed with point_leftbuttom,with x axis
+    for(int i=0;i<list_point.size();i++){
+        if(list_point[i]!=point_leftbuttom){
+            list_referpoint.push_back(list_point[i]);
+        }
+
+    }
+    sort(list_referpoint.begin(),list_referpoint.end(),cmp);
+
+  list_res[0]=point_leftbuttom;
+  list_res[1]=list_referpoint[0];
+  int length=2;
+  for(int i=1;i<list_referpoint.size();i++){
+      while(length>=2&&multi(list_res[length-1],list_res[length],list_referpoint[i])<=0) length--;
+      list_res[++length]=list_referpoint[i];
+  }
+
+  return list_res;
+
+}
+
+
 }

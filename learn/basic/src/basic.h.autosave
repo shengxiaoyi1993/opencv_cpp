@@ -31,7 +31,7 @@ void showMatTransform(const Mat Image);
  * calConvexHull caculate the convex hull of these points, result saved in list
  * @param list_point [description]
  */
-std::vector<cv::Point2i> calConvexHull(std::vector<cv::Point2i> list_point);
+std::vector<cv::Point2i> calConvexHull(const std::vector<Point2i> &list_point);
 
 }
 
