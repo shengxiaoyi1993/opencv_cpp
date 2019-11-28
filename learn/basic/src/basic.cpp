@@ -122,10 +122,15 @@ double X(Point2i a,Point2i b){
 double distance(Point2i a,Point2i b){
     return sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));
 }
+double distance(Point2i a){
+    return sqrt((a.x)*(a.x)+(a.y)*(a.y));
 
-bool cmp(Point2i a,Point2i b,Point2i base)
+}
+
+
+bool cmp(Point2i a,Point2i b)
 {
-    double value=X(a-base,b-base);
+    double value=X(a,b);
 
     if(value<0){
         return false;
@@ -134,7 +139,7 @@ bool cmp(Point2i a,Point2i b,Point2i base)
         return true;
     }
     else{
-        if(distance(a,base)>distance(b,base)){
+        if(distance(a)>distance(b)){
             return true;
         }
         else{
@@ -170,7 +175,7 @@ std::vector<cv::Point2i> calConvexHull(const std::vector<cv::Point2i>& list_poin
 //sort the point according to the angle of line formed with point_leftbuttom,with x axis
     for(int i=0;i<list_point.size();i++){
         if(list_point[i]!=point_leftbuttom){
-            list_referpoint.push_back(list_point[i]);
+            list_referpoint.push_back(list_point[i]-point_leftbuttom);
         }
 
     }
@@ -187,6 +192,150 @@ std::vector<cv::Point2i> calConvexHull(const std::vector<cv::Point2i>& list_poin
   return list_res;
 
 }
+
+bool isPointInImage(cv::Point2i point,const cv::Mat& image){
+    if(point.x<image.cols&&point.y<image.rows){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+void drawPointList(const std::vector<cv::Point2i>& list_point,cv::Mat& image){
+    for(int i=0;i<list_point.size();i++){
+        if(isPointInImage(list_point[i],image)){
+                circle(image, list_point[i], 2,Scalar(255,0,0),-1);
+        }
+        else{
+            cout<<list_point[i]<<" is out of image"<<endl;
+        }
+    }
+}
+
+
+void displayMatWithSize(cv::Mat mat,std::string name,cv::Size size ){
+    if(mat.size()==Size(0,0)){
+        return  ;
+    }
+    Mat mat_resize;
+    resize(mat,mat_resize,size);
+    imshow(name,mat_resize);
+    //    waitKey(0);
+    return  ;
+}
+
+void drawMultiLineShape(const std::vector<cv::Point2i>& list_point,cv::Mat& image){
+    if(list_point.size()==0){
+        return;
+    }
+    Point2i point_former=list_point[list_point.size()-1];
+    for(int i=0;i<list_point.size();i++){
+        //PERSUME that all points are in image
+        line(image, point_former, list_point[i], Scalar(255, 255, 255), 2);
+        point_former=list_point[i];
+    }
+}
+
+cv::Mat rotateAndCutImage(const cv::Mat& mat_src,double angle){
+  // vector<Point> contour;
+  // Point p1(0,offset_x),
+  // p2(mat_src.cols,mat_src.rows-offset_x),
+  // p3(2*offset_x,mat_src.rows),
+  // p4(mat_src.cols-offset_x*2,0);
+  // contour.push_back(p1);
+  // contour.push_back(p2);
+  // contour.push_back(p3);
+  // contour.push_back(p4);
+  // RotatedRect rect = minAreaRect(contour);//外接矩形
+  // Point2f center = rect.center;//外接矩形中心点坐标
+  Point2f center(mat_src.cols/2,mat_src.rows/2);
+  Mat rot_mat = getRotationMatrix2D(center, angle, 1.0);//求旋转矩阵
+  Mat rot_image;
+  Size dst_sz(mat_src.size());
+  warpAffine(mat_src, rot_image, rot_mat, dst_sz);//原图像旋转
+  int h_tl,w_tl,h_tr,w_tr;
+
+  for(int i=0;i<rot_image.cols;i++){
+    if(rot_image.at<uchar>(0,i)==0){
+
+    }
+    else{
+      w_tl=i;
+      break;
+    }
+  }
+
+  for(int i=rot_image.cols-1;i>=0;i--){
+    if(rot_image.at<uchar>(0,i)==0){
+
+    }
+    else{
+      w_tr=rot_image.cols-1-i;
+      break;
+    }
+  }
+
+  for(int i=0;i<rot_image.rows;i++){
+    if(rot_image.at<uchar>(i,0)==0){
+
+    }
+    else{
+      h_tl=i;
+      break;
+    }
+  }
+
+  for(int i=0;i<rot_image.rows;i++){
+    if(rot_image.at<uchar>(i,rot_image.cols-1)==0){
+
+    }
+    else{
+      h_tr=i;
+      break;
+    }
+  }
+
+
+  cout<<"w_tl:"<<w_tl<<endl;
+  cout<<"w_tr:"<<w_tr<<endl;
+  cout<<"h_tl:"<<h_tl<<endl;
+  cout<<"h_tr:"<<h_tr<<endl;
+
+
+Rect2i rect_in;
+if(w_tl>h_tl){
+  rect_in=Rect2i(w_tr,h_tl,rot_image.cols-2*w_tr,rot_image.rows-2*h_tl);
+}
+else{
+  rect_in=Rect2i(w_tl,h_tr,rot_image.cols-2*w_tl,rot_image.rows-2*h_tr);
+}
+cout<<"rect_in: "<<rect_in<<endl;
+
+Mat mat_in=rot_image(rect_in);
+
+
+  return mat_in;
+
+}
+
+
+
+int calMeanAndSD(const cv::Mat& mat_src,double &value_mean,double&value_sd){
+  if(mat_src.cols==0||mat_src.rows==0){
+    return -1;
+  }
+  Mat tmp_m, tmp_sd;
+  meanStdDev(mat_src, tmp_m, tmp_sd);
+  value_mean=tmp_m.at<double>(0,0);
+  value_sd = tmp_sd.at<double>(0,0);
+  return 0;
+}
+
+
+
+
+
 
 
 }

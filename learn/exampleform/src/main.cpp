@@ -2,6 +2,7 @@
 #include "opencv2/imgcodecs.hpp"
 #include "opencv2/highgui.hpp"
 #include "opencv2/core.hpp"
+#include"../../basic/src/basic.h"
 #include<iostream>
 #include<string>
 
@@ -31,7 +32,7 @@ void switch_on_function(){
 int main(int argc,char** argv)
 {
     cvNamedWindow("Example3_7",CV_WINDOW_NORMAL);
-    cvCreateTrackbar("bar","Example3_7",&g_switch_value,100,switch_callback);
+    cvCreateTrackbar("bar","Example3_7",&g_switch_value,360,switch_callback);
     // createButton("Add", callback_add, NULL, QT_PUSH_BUTTON, 0);
     // createButton("Sub", callback_sub, NULL, QT_PUSH_BUTTON, 0);
     cvWaitKey(0);
@@ -51,8 +52,10 @@ void switch_callback(int position)
   cout<<mat_test.rows<<endl;
   int value_threshold=static_cast<int>(1.0*256*position/100);
   cout<<"value_threshold:"<<value_threshold<<endl;
-  threshold(mat_test,mat_test,value_threshold,255,CV_THRESH_BINARY_INV);
-  imshow("Example3_7",mat_test);
+  // threshold(mat_test,mat_test,value_threshold,255,CV_THRESH_BINARY_INV);
+  Mat mat_dst=basic::rotateAndCutImage(mat_test,position);
+
+  imshow("Example3_7",mat_dst);
 
 
      if(position == 0)

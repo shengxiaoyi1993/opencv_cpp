@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8)
 project(example)
 set( CMAKE_CXX_FLAGS "-std=c++11" )
 
-add_executable(${PROJECT_NAME} "../src/main.cpp" )
+add_executable(${PROJECT_NAME} "../src/main.cpp" "../../basic/src/basic.cpp")
 
 message(${PROJECT_SOURCE_DIR})
 set(PROJECT_INIT_PATH "/home/sxy/Github/opencv_cpp")
