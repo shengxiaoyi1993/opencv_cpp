@@ -50,6 +50,11 @@ void displayMatWithSize(cv::Mat mat,std::string name,cv::Size size );
 cv::Mat rotateAndCutImage(const cv::Mat& mat_src,double angle);
 
 
+int calMeanAndSD(const cv::Mat& mat_src,double &value_mean,double&value_sd);
+
+
+
+
 }
 
 
