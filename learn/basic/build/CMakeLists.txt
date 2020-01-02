@@ -9,7 +9,6 @@ message(${PROJECT_SOURCE_DIR})
 string(REGEX REPLACE "(.+)\\learn/basic.*" "\\1" PROJECT_INIT_PATH ${PROJECT_SOURCE_DIR})
 
 
-
 message(${PROJECT_INIT_PATH})
 
 set(Opencv_INCLUDE_DIRS "${PROJECT_INIT_PATH}start/lib/opencv-3.4.1/include")
