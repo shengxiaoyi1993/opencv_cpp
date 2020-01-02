@@ -6,7 +6,7 @@ set( CMAKE_CXX_FLAGS "-std=c++11" )
 add_executable(${PROJECT_NAME} "../src/main.cpp" "../../histomgram/src/histogram.cpp" "../../basic/src/basic.cpp")
 
 message(${PROJECT_SOURCE_DIR})
-set(PROJECT_INIT_PATH "/home/sxy/github-project/opencv_cpp")
+set(PROJECT_INIT_PATH "/home/sxy/Github/opencv_cpp")
 
 set(Opencv_INCLUDE_DIRS "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/include")
 set(Opencv_LIBRARIES_DIRS "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/lib64")

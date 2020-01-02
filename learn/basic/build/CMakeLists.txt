@@ -12,8 +12,8 @@ string(REGEX REPLACE "(.+)\\learn/basic.*" "\\1" PROJECT_INIT_PATH ${PROJECT_SOU
 
 message(${PROJECT_INIT_PATH})
 
-set(Opencv_INCLUDE_DIRS "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/include")
-set(Opencv_LIBRARIES_DIRS "${PROJECT_INIT_PATH}/start/lib/opencv-3.4.1/lib64")
+set(Opencv_INCLUDE_DIRS "${PROJECT_INIT_PATH}start/lib/opencv-3.4.1/include")
+set(Opencv_LIBRARIES_DIRS "${PROJECT_INIT_PATH}start/lib/opencv-3.4.1/lib64")
 
 FILE(GLOB_RECURSE Opencv_LIBs "${PROJECT_INIT_PATH}start/lib/opencv-3.4.1/lib64/*.so")
 
