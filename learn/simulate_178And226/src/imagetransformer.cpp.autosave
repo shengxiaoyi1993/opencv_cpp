@@ -1,0 +1,42 @@
+#include "imagetransformer.h"
+#include <iostream>
+#include <string>
+#include <vector>
+#include <opencv2/opencv.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/features2d/features2d.hpp>
+
+using namespace std;
+using namespace cv;
+
+
+//------------------------------------------------------------------------------
+ImageTransformer::ImageTransformer(int v_channels,
+                                   int v_bit_channel,
+                                   int v_bit_delivery):
+    m_channels(v_channels),
+    m_bit_channel(v_bit_channel),
+    m_bit_delivery(v_bit_delivery)
+{
+
+}
+
+
+
+//------------------------------------------------------------------------------
+int transform(const cv::Mat & mat_src, 
+              const std::string & path_output){
+    
+    if(mat_src.empty()){
+        cout<<"input image is empty"<<endl;
+        return  -1;
+    }
+    
+    Mat mat_clone;
+    cvtColor(mat_src, mat_clone, COLOR_BGR2GRAY);
+    
+    
+    
+    
+}
+
