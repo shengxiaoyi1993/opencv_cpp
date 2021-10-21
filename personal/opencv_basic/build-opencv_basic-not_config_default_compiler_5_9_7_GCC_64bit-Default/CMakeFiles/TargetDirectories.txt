@@ -1,0 +1,8 @@
+/home/sxy/Work/com_repo/public_lib/opencv_basic/build-opencv_basic-not_config_default_compiler_5_9_7_GCC_64bit-Default/CMakeFiles/install/strip.dir
+/home/sxy/Work/com_repo/public_lib/opencv_basic/build-opencv_basic-not_config_default_compiler_5_9_7_GCC_64bit-Default/CMakeFiles/install/local.dir
+/home/sxy/Work/com_repo/public_lib/opencv_basic/build-opencv_basic-not_config_default_compiler_5_9_7_GCC_64bit-Default/CMakeFiles/install.dir
+/home/sxy/Work/com_repo/public_lib/opencv_basic/build-opencv_basic-not_config_default_compiler_5_9_7_GCC_64bit-Default/CMakeFiles/list_install_components.dir
+/home/sxy/Work/com_repo/public_lib/opencv_basic/build-opencv_basic-not_config_default_compiler_5_9_7_GCC_64bit-Default/CMakeFiles/rebuild_cache.dir
+/home/sxy/Work/com_repo/public_lib/opencv_basic/build-opencv_basic-not_config_default_compiler_5_9_7_GCC_64bit-Default/CMakeFiles/edit_cache.dir
+/home/sxy/Work/com_repo/public_lib/opencv_basic/build-opencv_basic-not_config_default_compiler_5_9_7_GCC_64bit-Default/CMakeFiles/test.dir
+/home/sxy/Work/com_repo/public_lib/opencv_basic/build-opencv_basic-not_config_default_compiler_5_9_7_GCC_64bit-Default/CMakeFiles/opencv_basic.dir

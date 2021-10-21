@@ -1,0 +1,2 @@
+/bin/ar qc libopencv_basic.a  CMakeFiles/opencv_basic.dir/src/opencv_basic.cpp.o CMakeFiles/opencv_basic.dir/src/opencv_match.cpp.o CMakeFiles/opencv_basic.dir/src/opencv_transform.cpp.o
+/bin/ranlib libopencv_basic.a
