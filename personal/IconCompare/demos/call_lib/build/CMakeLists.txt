@@ -48,7 +48,7 @@ set(LIST_PUBLIC_LIB
   #  uio
   #  msgchannel
   #  socket_channel
-   toml
+#   toml
   )
 
 # 本地的模块
@@ -59,6 +59,11 @@ set(LIST_LOCAL_LIB
   #  json_explain
   #  http_def
   )
+
+set(LIST_OPENCV_LIB
+#  opencv_basic
+IconCompare
+)
 
 # 编译选项
 set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11" )
@@ -113,6 +118,23 @@ if(NOT TARGET ${MYSUBLIB})
 endif()
 ENDFOREACH(MYSUBLIB)
 
+SET(PATH_OPENCV_REPO
+  "/home/sxy/Github/opencv_cpp/"
+  CACHE
+  STRING
+  "Some user-specified option")
+
+FOREACH(MYSUBLIB ${LIST_OPENCV_LIB})
+if(NOT TARGET ${MYSUBLIB})
+  message("add_subdirectory ${MYSUBLIB}")
+  add_subdirectory(${PATH_OPENCV_REPO}/personal/${MYSUBLIB}/
+    ${PATH_OPENCV_REPO}/personal_out/${MYSUBLIB}_${COMPILER_SUFFIX}.out/)
+endif()
+ENDFOREACH(MYSUBLIB)
+
+file(COPY ${CMAKE_SOURCE_DIR}/../resources/ DESTINATION resources)
+
+
 message("OpenCV_LIBS:"${OpenCV_LIBS})
 
 add_executable (${PROJECT_NAME}
@@ -127,6 +149,7 @@ target_link_libraries(
   ${LIST_PRIVATE_LIB}
   ${LIST_PUBLIC_LIB}
   ${LIST_LOCAL_LIB}
+  ${LIST_OPENCV_LIB}
 #  ${OpenCV_LIBS}
   )
 

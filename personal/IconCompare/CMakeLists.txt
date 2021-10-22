@@ -22,8 +22,12 @@ set(LIST_PRIVATE_LIB
 # 位于<com_repo>/public_lib的库
 set(LIST_PUBLIC_LIB
   #  cppgc
-  opencv_basic
+
   )
+
+set(LIST_OPENCV_LIB
+  opencv_basic
+)
 
 
 # 编译选项
@@ -79,6 +83,23 @@ if(NOT TARGET ${MYSUBLIB})
 endif()
 ENDFOREACH(MYSUBLIB)
 
+
+
+SET(PATH_OPENCV_REPO
+  "/home/sxy/Github/opencv_cpp/"
+  CACHE
+  STRING
+  "Some user-specified option")
+
+FOREACH(MYSUBLIB ${LIST_OPENCV_LIB})
+if(NOT TARGET ${MYSUBLIB})
+  message("add_subdirectory ${MYSUBLIB}")
+  add_subdirectory(${PATH_OPENCV_REPO}/personal/${MYSUBLIB}/
+    ${PATH_OPENCV_REPO}/personal_out/${MYSUBLIB}_${COMPILER_SUFFIX}.out/)
+endif()
+ENDFOREACH(MYSUBLIB)
+
+
 include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}/include
   ${CMAKE_CURRENT_SOURCE_DIR}/src
@@ -105,9 +126,11 @@ target_link_libraries(
   ${LIST_COM_LIB}
   ${LIST_PRIVATE_LIB}
   ${LIST_PUBLIC_LIB}
+  ${LIST_OPENCV_LIB}
   )
 
 enable_testing()
+
 #set(GTEST_LIB gtest gtest_main)
 ## 添加测试用例
 #add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/gtest/)

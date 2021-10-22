@@ -38,7 +38,10 @@ int IconCompare::getIconMeaning(const cv::Mat &v_mat,std::string &v_mean)
   for (auto it:__map_icon) {
     cv::Mat mat_tmp=cv::imread(it.second);
     cv::Mat mat_target=v_mat;
-    if (!mat_target.empty() && mat_tmp.empty()) {
+    std::cout<<"mat_tmp.size:"<<mat_tmp.size<<std::endl;
+    std::cout<<"mat_target.size:"<<mat_target.size<<std::endl;
+
+    if (!mat_target.empty() && !mat_tmp.empty()) {
       if (mat_target.size() != __size_std) {
         cv::resize(mat_target,mat_target,__size_std);
       }

@@ -1,55 +1,24 @@
 #include <iostream>
-#include <iostream>
-#include <time.h>
-#include <sys/time.h>
-#include "toml/toml.h"
+#include "IconCompare/IconCompare.h"
 
 
 
-using namespace std;
-
-
-
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
+  IconCompare container;
 
-  Toml *d = new Toml(argv[1]);
+  std::map<std::string,std::string> map={
+    {"area","./resources/area.png"},
+    {"list","./resources/list.png"},
+    {"search","./resources/search.png"}
+  };
+  container.setBenchMark(map,cv::Size(32,32));
 
-  string region;
+  std::string mean;
+  int ret=container.getIconMeaning("./resources/search_target.png",mean);
+  if(ret == 0){
+    std::cout<<"mean:"<<mean<<std::endl;
+  }
 
-  cout << d->Get("region", region) << endl;
-
-  cout << "region:" << region << endl;
-
-  bool h;
-
-  d->Get("hello", h);
-
-  cout << "hello:" << h << endl;
-
-  d->Set("me", "jry");
-
-  d->Set("valid", true);
-
-  d->Set("valid2", false);
-
-  d->Set("grade", 1.234);
-
-  d->Set("num", 12);
-
-  cout << "===============" << endl;
-
-  string dtr;
-  d->Get("me", dtr);
-
-  cout << "dtr:" << dtr << endl;
-
-  cout << d->toString() << endl;
-
-  time_t tnow;
-  time(&tnow);
-
-  d->Set("last_count_time", &tnow);
-
-  d->Save("hello.toml");
+  return 0;
 }
