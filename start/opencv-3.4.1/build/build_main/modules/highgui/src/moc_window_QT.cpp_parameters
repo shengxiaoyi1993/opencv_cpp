@@ -1,0 +1,12 @@
+-I/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main
+-I/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/modules/highgui
+-I/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/modules/highgui
+-D__OPENCV_BUILD=1
+-D_USE_MATH_DEFINES
+-D__STDC_CONSTANT_MACROS
+-D__STDC_LIMIT_MACROS
+-D__STDC_FORMAT_MACROS
+-DHAVE_WEBP
+-o
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/modules/highgui/src/moc_window_QT.cpp
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/modules/highgui/src/window_QT.h

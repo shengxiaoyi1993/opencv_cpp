@@ -1,0 +1,819 @@
+Build output check failed:
+    Regex: 'command line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command line option ‘-Wmissing-prototypes’ is valid for C/ObjC but not for C++ [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wmissing-prototypes'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_e131f/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_e131f.dir/build.make CMakeFiles/cmTC_e131f.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e131f.dir/src.cxx.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wmissing-prototypes -std=c++11 -o CMakeFiles/cmTC_e131f.dir/src.cxx.o -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option ‘-Wmissing-prototypes’ is valid for C/ObjC but not for C++ [enabled by default]
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+Linking CXX executable cmTC_e131f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e131f.dir/link.txt --verbose=1
+/usr/bin/c++    -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_e131f.dir/src.cxx.o  -o cmTC_e131f 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++ [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wstrict-prototypes'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_90760/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_90760.dir/build.make CMakeFiles/cmTC_90760.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_90760.dir/src.cxx.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wstrict-prototypes -std=c++11 -o CMakeFiles/cmTC_90760.dir/src.cxx.o -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++ [enabled by default]
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+Linking CXX executable cmTC_90760
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90760.dir/link.txt --verbose=1
+/usr/bin/c++    -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_90760.dir/src.cxx.o  -o cmTC_90760 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-Wsign-promo’ is valid for C++/ObjC++ but not for C [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow  -Wsign-promo'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_bcd60/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_bcd60.dir/build.make CMakeFiles/cmTC_bcd60.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bcd60.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow  -Wsign-promo -o CMakeFiles/cmTC_bcd60.dir/src.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-Wsign-promo’ is valid for C++/ObjC++ but not for C [enabled by default]
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+Linking C executable cmTC_bcd60
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcd60.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_bcd60.dir/src.c.o  -o cmTC_bcd60 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-Wno-delete-non-virtual-dtor’ is valid for C++/ObjC++ but not for C [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing  -Wno-delete-non-virtual-dtor'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_24e8a/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_24e8a.dir/build.make CMakeFiles/cmTC_24e8a.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24e8a.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing  -Wno-delete-non-virtual-dtor -o CMakeFiles/cmTC_24e8a.dir/src.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-Wno-delete-non-virtual-dtor’ is valid for C++/ObjC++ but not for C [enabled by default]
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+Linking C executable cmTC_24e8a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24e8a.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_24e8a.dir/src.c.o  -o cmTC_24e8a 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option "-Wno-unnamed-type-template-args" [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor  -Wno-unnamed-type-template-args'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_f7e57/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_f7e57.dir/build.make CMakeFiles/cmTC_f7e57.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f7e57.dir/src.cxx.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor  -Wno-unnamed-type-template-args -std=c++11 -o CMakeFiles/cmTC_f7e57.dir/src.cxx.o -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus: warning: unrecognized command line option "-Wno-unnamed-type-template-args" [enabled by default]
+Linking CXX executable cmTC_f7e57
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7e57.dir/link.txt --verbose=1
+/usr/bin/c++    -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_f7e57.dir/src.cxx.o  -o cmTC_f7e57 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: warning: unrecognized command line option "-Wno-unnamed-type-template-args" [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing  -Wno-unnamed-type-template-args'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_b135e/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_b135e.dir/build.make CMakeFiles/cmTC_b135e.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b135e.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing  -Wno-unnamed-type-template-args -o CMakeFiles/cmTC_b135e.dir/src.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1: warning: unrecognized command line option "-Wno-unnamed-type-template-args" [enabled by default]
+Linking C executable cmTC_b135e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b135e.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_b135e.dir/src.c.o  -o cmTC_b135e 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option "-Wno-implicit-fallthrough" [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment  -Wno-implicit-fallthrough'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_c8a42/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_c8a42.dir/build.make CMakeFiles/cmTC_c8a42.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c8a42.dir/src.cxx.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment  -Wno-implicit-fallthrough -std=c++11 -o CMakeFiles/cmTC_c8a42.dir/src.cxx.o -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus: warning: unrecognized command line option "-Wno-implicit-fallthrough" [enabled by default]
+Linking CXX executable cmTC_c8a42
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8a42.dir/link.txt --verbose=1
+/usr/bin/c++    -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_c8a42.dir/src.cxx.o  -o cmTC_c8a42 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: warning: unrecognized command line option "-Wno-implicit-fallthrough" [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment  -Wno-implicit-fallthrough'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_486b0/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_486b0.dir/build.make CMakeFiles/cmTC_486b0.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_486b0.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment  -Wno-implicit-fallthrough -o CMakeFiles/cmTC_486b0.dir/src.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1: warning: unrecognized command line option "-Wno-implicit-fallthrough" [enabled by default]
+Linking C executable cmTC_486b0
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_486b0.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_486b0.dir/src.c.o  -o cmTC_486b0 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -fvisibility-inlines-hidden'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_cfa70/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_cfa70.dir/build.make CMakeFiles/cmTC_cfa70.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cfa70.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -fvisibility-inlines-hidden -o CMakeFiles/cmTC_cfa70.dir/src.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C [enabled by default]
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+Linking C executable cmTC_cfa70
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfa70.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_cfa70.dir/src.c.o  -o cmTC_cfa70 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: warning: unrecognized command line option "-Wno-shift-negative-value" [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-shift-negative-value'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_e659c/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_e659c.dir/build.make CMakeFiles/cmTC_e659c.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e659c.dir/src.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -Wno-cast-align -Wno-shadow -Wno-unused  -O3 -DNDEBUG -fPIE    -Wno-shift-negative-value -o CMakeFiles/cmTC_e659c.dir/src.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1: warning: unrecognized command line option "-Wno-shift-negative-value" [enabled by default]
+Linking C executable cmTC_e659c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e659c.dir/link.txt --verbose=1
+/usr/bin/cc    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -Wno-cast-align -Wno-shadow -Wno-unused  -O3 -DNDEBUG    -Wl,--gc-sections  -rdynamic CMakeFiles/cmTC_e659c.dir/src.c.o  -o cmTC_e659c 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Determining size of INT8 failed with the following output:
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_b4c46/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_b4c46.dir/build.make CMakeFiles/cmTC_b4c46.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b4c46.dir/int8.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG -fPIE   -o CMakeFiles/cmTC_b4c46.dir/int8.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CheckTypeSize/int8.c
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CheckTypeSize/int8.c:23:22: error: ‘INT8’ undeclared here (not in a function)
+ #define SIZE (sizeof(INT8))
+                      ^
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CheckTypeSize/int8.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+gmake[3]: *** [CMakeFiles/cmTC_b4c46.dir/int8.c.o] Error 1
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: *** [cmTC_b4c46/fast] Error 2
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CheckTypeSize/int8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(INT8))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of INT16 failed with the following output:
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_175af/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_175af.dir/build.make CMakeFiles/cmTC_175af.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_175af.dir/int16.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG -fPIE   -o CMakeFiles/cmTC_175af.dir/int16.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CheckTypeSize/int16.c
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CheckTypeSize/int16.c:23:22: error: ‘INT16’ undeclared here (not in a function)
+ #define SIZE (sizeof(INT16))
+                      ^
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CheckTypeSize/int16.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+gmake[3]: *** [CMakeFiles/cmTC_175af.dir/int16.c.o] Error 1
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: *** [cmTC_175af/fast] Error 2
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CheckTypeSize/int16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(INT16))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of INT32 failed with the following output:
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_5d601/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_5d601.dir/build.make CMakeFiles/cmTC_5d601.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5d601.dir/int32.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG -fPIE   -o CMakeFiles/cmTC_5d601.dir/int32.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CheckTypeSize/int32.c
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CheckTypeSize/int32.c:23:22: error: ‘INT32’ undeclared here (not in a function)
+ #define SIZE (sizeof(INT32))
+                      ^
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CheckTypeSize/int32.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+gmake[3]: *** [CMakeFiles/cmTC_5d601.dir/int32.c.o] Error 1
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: *** [cmTC_5d601/fast] Error 2
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CheckTypeSize/int32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(INT32))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function setmode exists failed with the following output:
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_2fa53/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_2fa53.dir/build.make CMakeFiles/cmTC_2fa53.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2fa53.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=setmode -O3 -DNDEBUG -fPIE   -o CMakeFiles/cmTC_2fa53.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2fa53
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2fa53.dir/link.txt --verbose=1
+/usr/bin/cc    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=setmode -O3 -DNDEBUG    -Wl,--gc-sections  -rdynamic CMakeFiles/cmTC_2fa53.dir/CheckFunctionExists.c.o  -o cmTC_2fa53 
+CMakeFiles/cmTC_2fa53.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text.startup.main+0xc): undefined reference to `setmode'
+collect2: error: ld returned 1 exit status
+gmake[3]: *** [cmTC_2fa53] Error 1
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: *** [cmTC_2fa53/fast] Error 2
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: warning: unrecognized command line option "-Wno-misleading-indentation" [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-misleading-indentation'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_274ad/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_274ad.dir/build.make CMakeFiles/cmTC_274ad.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_274ad.dir/src.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes  -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -Wno-unused-but-set-variable -Wno-missing-prototypes -Wno-missing-declarations -Wno-undef -Wno-unused -Wno-sign-compare -Wno-cast-align -Wno-shadow -Wno-maybe-uninitialized -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast  -O3 -DNDEBUG -fPIE    -Wno-misleading-indentation -o CMakeFiles/cmTC_274ad.dir/src.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1: warning: unrecognized command line option "-Wno-misleading-indentation" [enabled by default]
+Linking C executable cmTC_274ad
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_274ad.dir/link.txt --verbose=1
+/usr/bin/cc    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes  -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -Wno-unused-but-set-variable -Wno-missing-prototypes -Wno-missing-declarations -Wno-undef -Wno-unused -Wno-sign-compare -Wno-cast-align -Wno-shadow -Wno-maybe-uninitialized -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast  -O3 -DNDEBUG    -Wl,--gc-sections  -rdynamic CMakeFiles/cmTC_274ad.dir/src.c.o  -o cmTC_274ad 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: warning: unrecognized command line option "-Wno-pointer-compare" [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-pointer-compare'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_48867/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_48867.dir/build.make CMakeFiles/cmTC_48867.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48867.dir/src.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -Wno-implicit-function-declaration -Wno-uninitialized -Wno-missing-prototypes -Wno-unused-but-set-parameter -Wno-missing-declarations -Wno-unused -Wno-shadow -Wno-sign-compare -Wno-strict-overflow  -O3 -DNDEBUG -fPIE    -Wno-pointer-compare -o CMakeFiles/cmTC_48867.dir/src.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1: warning: unrecognized command line option "-Wno-pointer-compare" [enabled by default]
+Linking C executable cmTC_48867
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48867.dir/link.txt --verbose=1
+/usr/bin/cc    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -Wno-implicit-function-declaration -Wno-uninitialized -Wno-missing-prototypes -Wno-unused-but-set-parameter -Wno-missing-declarations -Wno-unused -Wno-shadow -Wno-sign-compare -Wno-strict-overflow  -O3 -DNDEBUG    -Wl,--gc-sections  -rdynamic CMakeFiles/cmTC_48867.dir/src.c.o  -o cmTC_48867 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: warning: unrecognized command line option "-Wno-absolute-value" [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-absolute-value'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_06fd5/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_06fd5.dir/build.make CMakeFiles/cmTC_06fd5.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_06fd5.dir/src.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -Wno-implicit-function-declaration -Wno-uninitialized -Wno-missing-prototypes -Wno-unused-but-set-parameter -Wno-missing-declarations -Wno-unused -Wno-shadow -Wno-sign-compare -Wno-strict-overflow  -O3 -DNDEBUG -fPIE    -Wno-absolute-value -o CMakeFiles/cmTC_06fd5.dir/src.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1: warning: unrecognized command line option "-Wno-absolute-value" [enabled by default]
+Linking C executable cmTC_06fd5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06fd5.dir/link.txt --verbose=1
+/usr/bin/cc    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -Wno-implicit-function-declaration -Wno-uninitialized -Wno-missing-prototypes -Wno-unused-but-set-parameter -Wno-missing-declarations -Wno-unused -Wno-shadow -Wno-sign-compare -Wno-strict-overflow  -O3 -DNDEBUG    -Wl,--gc-sections  -rdynamic CMakeFiles/cmTC_06fd5.dir/src.c.o  -o cmTC_06fd5 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Determining if the include file /usr/include/libpng/png.h exists failed with the following output:
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_8fcce/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_8fcce.dir/build.make CMakeFiles/cmTC_8fcce.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8fcce.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG -fPIE   -o CMakeFiles/cmTC_8fcce.dir/CheckIncludeFile.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:37: fatal error: /usr/include/libpng/png.h: No such file or directory
+ #include </usr/include/libpng/png.h>
+                                     ^
+compilation terminated.
+gmake[3]: *** [CMakeFiles/cmTC_8fcce.dir/CheckIncludeFile.c.o] Error 1
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: *** [cmTC_8fcce/fast] Error 2
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option "-Wno-misleading-indentation" [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-misleading-indentation'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_dc4b3/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_dc4b3.dir/build.make CMakeFiles/cmTC_dc4b3.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dc4b3.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith  -Wsign-promo  -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations  -O3 -DNDEBUG -fPIE    -Wno-misleading-indentation -std=c++11 -o CMakeFiles/cmTC_dc4b3.dir/src.cxx.o -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus: warning: unrecognized command line option "-Wno-misleading-indentation" [enabled by default]
+Linking CXX executable cmTC_dc4b3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc4b3.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith  -Wsign-promo  -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations  -O3 -DNDEBUG    -Wl,--gc-sections  -rdynamic CMakeFiles/cmTC_dc4b3.dir/src.cxx.o  -o cmTC_dc4b3 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_eb22b/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_eb22b.dir/build.make CMakeFiles/cmTC_eb22b.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eb22b.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG -fPIE   -o CMakeFiles/cmTC_eb22b.dir/CheckIncludeFile.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:28: fatal error: linux/videodev.h: No such file or directory
+ #include <linux/videodev.h>
+                            ^
+compilation terminated.
+gmake[3]: *** [CMakeFiles/cmTC_eb22b.dir/CheckIncludeFile.c.o] Error 1
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: *** [cmTC_eb22b/fast] Error 2
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_86676/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_86676.dir/build.make CMakeFiles/cmTC_86676.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86676.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG -fPIE   -o CMakeFiles/cmTC_86676.dir/CheckIncludeFile.c.o   -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:25: fatal error: sys/videoio.h: No such file or directory
+ #include <sys/videoio.h>
+                         ^
+compilation terminated.
+gmake[3]: *** [CMakeFiles/cmTC_86676.dir/CheckIncludeFile.c.o] Error 1
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: *** [cmTC_86676/fast] Error 2
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_992cd/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_992cd.dir/build.make CMakeFiles/cmTC_992cd.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_992cd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=sgemm_ -O3 -DNDEBUG -fPIE   -o CMakeFiles/cmTC_992cd.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_992cd
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_992cd.dir/link.txt --verbose=1
+/usr/bin/cc    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=sgemm_ -O3 -DNDEBUG    -Wl,--gc-sections  -rdynamic CMakeFiles/cmTC_992cd.dir/CheckFunctionExists.c.o  -o cmTC_992cd 
+CMakeFiles/cmTC_992cd.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text.startup.main+0xc): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+gmake[3]: *** [cmTC_992cd] Error 1
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: *** [cmTC_992cd/fast] Error 2
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+
+Build output check failed:
+    Regex: 'command line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command line option ‘-Wno-missing-prototypes’ is valid for C/ObjC but not for C++ [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-missing-prototypes'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_8c98f/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_8c98f.dir/build.make CMakeFiles/cmTC_8c98f.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8c98f.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated  -O3 -DNDEBUG -fPIE    -Wno-missing-prototypes -std=c++11 -o CMakeFiles/cmTC_8c98f.dir/src.cxx.o -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option ‘-Wno-missing-prototypes’ is valid for C/ObjC but not for C++ [enabled by default]
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+Linking CXX executable cmTC_8c98f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c98f.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated  -O3 -DNDEBUG    -Wl,--gc-sections  -rdynamic CMakeFiles/cmTC_8c98f.dir/src.cxx.o  -o cmTC_8c98f 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option "-Wno-tautological-undefined-compare" [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-tautological-undefined-compare'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_ebce4/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_ebce4.dir/build.make CMakeFiles/cmTC_ebce4.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ebce4.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith   -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef  -O3 -DNDEBUG -fPIE    -Wno-tautological-undefined-compare -std=c++11 -o CMakeFiles/cmTC_ebce4.dir/src.cxx.o -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus: warning: unrecognized command line option "-Wno-tautological-undefined-compare" [enabled by default]
+Linking CXX executable cmTC_ebce4
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebce4.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith   -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef  -O3 -DNDEBUG    -Wl,--gc-sections  -rdynamic CMakeFiles/cmTC_ebce4.dir/src.cxx.o  -o cmTC_ebce4 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option "-Wno-unused-const-variable" [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-unused-const-variable'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_682a3/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_682a3.dir/build.make CMakeFiles/cmTC_682a3.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_682a3.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith   -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function  -O3 -DNDEBUG -fPIE    -Wno-unused-const-variable -std=c++11 -o CMakeFiles/cmTC_682a3.dir/src.cxx.o -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus: warning: unrecognized command line option "-Wno-unused-const-variable" [enabled by default]
+Linking CXX executable cmTC_682a3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_682a3.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith   -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function  -O3 -DNDEBUG    -Wl,--gc-sections  -rdynamic CMakeFiles/cmTC_682a3.dir/src.cxx.o  -o cmTC_682a3 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option "-Wno-shorten-64-to-32" [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-shorten-64-to-32'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_7952d/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_7952d.dir/build.make CMakeFiles/cmTC_7952d.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7952d.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith   -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function  -O3 -DNDEBUG -fPIE    -Wno-shorten-64-to-32 -std=c++11 -o CMakeFiles/cmTC_7952d.dir/src.cxx.o -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus: warning: unrecognized command line option "-Wno-shorten-64-to-32" [enabled by default]
+Linking CXX executable cmTC_7952d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7952d.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith   -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function  -O3 -DNDEBUG    -Wl,--gc-sections  -rdynamic CMakeFiles/cmTC_7952d.dir/src.cxx.o  -o cmTC_7952d 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option "-Wno-enum-compare-switch" [enabled by default]'
+Compilation failed:
+    source file: '/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-enum-compare-switch'
+===== BUILD LOG =====
+Change Dir: /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_d0fcb/fast 
+gmake[2]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_d0fcb.dir/build.make CMakeFiles/cmTC_d0fcb.dir/build
+gmake[3]: Entering directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d0fcb.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith   -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-invalid-offsetof  -O3 -DNDEBUG -fPIE    -Wno-enum-compare-switch -std=c++11 -o CMakeFiles/cmTC_d0fcb.dir/src.cxx.o -c /home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx
+/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp/src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus: warning: unrecognized command line option "-Wno-enum-compare-switch" [enabled by default]
+Linking CXX executable cmTC_d0fcb
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0fcb.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith   -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-invalid-offsetof  -O3 -DNDEBUG    -Wl,--gc-sections  -rdynamic CMakeFiles/cmTC_d0fcb.dir/src.cxx.o  -o cmTC_d0fcb 
+gmake[3]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+gmake[2]: Leaving directory `/home/sxy/Github/opencv_cpp/start/opencv-3.4.1/build/build_main/CMakeFiles/CMakeTmp'
+
+===== END =====
+

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sxy/Github/opencv_cpp/learn/imagesort/src/basic/cJSON.c
+string.h
+-
+stdio.h
+-
+math.h
+-
+stdlib.h
+-
+limits.h
+-
+ctype.h
+-
+locale.h
+-
+cJSON.h
+/home/sxy/Github/opencv_cpp/learn/imagesort/src/basic/cJSON.h
+
+/home/sxy/Github/opencv_cpp/learn/imagesort/src/basic/cJSON.h
+stddef.h
+-
+

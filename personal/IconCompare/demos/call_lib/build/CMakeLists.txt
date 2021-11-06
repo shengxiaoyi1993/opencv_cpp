@@ -135,7 +135,7 @@ ENDFOREACH(MYSUBLIB)
 file(COPY ${CMAKE_SOURCE_DIR}/../resources/ DESTINATION resources)
 
 
-message("OpenCV_LIBS:"${OpenCV_LIBS})
+message("OpenCV_LIBS:" ${OpenCV_LIBS})
 
 add_executable (${PROJECT_NAME}
   ../src/main.cpp

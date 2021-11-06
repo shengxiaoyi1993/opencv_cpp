@@ -1,0 +1,3 @@
+/home/sxy/Github/opencv_cpp/learn/simple_convert/build/build/CMakeFiles/rebuild_cache.dir
+/home/sxy/Github/opencv_cpp/learn/simple_convert/build/build/CMakeFiles/edit_cache.dir
+/home/sxy/Github/opencv_cpp/learn/simple_convert/build/build/CMakeFiles/example.dir
