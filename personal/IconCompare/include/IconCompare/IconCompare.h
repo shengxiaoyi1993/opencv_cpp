@@ -37,6 +37,8 @@ private:
   std::map<std::string,std::string> __map_icon;
   cv::Size __size_std;
 
+  const int __g_volatility_cut;
+
 
 };
 

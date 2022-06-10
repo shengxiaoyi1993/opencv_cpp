@@ -23,6 +23,52 @@ float  calValueWithCurve(float value_start,float value_end,int interval,int pos 
 int getXFromStraightLineAtY(cv::Point2i point0,cv::Point2i point1,int y);
 
 
+
+/**
+ * @brief getOverLap
+ * - 已知两图片的部分重叠区域,计算两图片的最大重叠区域
+ * @param v_size_0
+ * @param v_rect_0
+ * @param v_size_1
+ * @param v_rect_1
+ * @param v_rect_overlap_0
+ * @param v_rect_overlap_1
+ * @return
+ */
+int getOverLap(cv::Size v_size_0,
+               cv::Rect v_rect_0,
+               cv::Size v_size_1,
+               cv::Rect v_rect_1,
+               cv::Rect v_rect_overlap_0,
+               cv::Rect v_rect_overlap_1
+               );
+
+///**
+// * @brief getRectOffsetVetor
+// * - 已知量及
+// * @param p0
+// * @param p1
+// * @return
+// */
+//int getRectOffsetVetor(const cv::Point &p0,const cv::Point &p1);
+
+/**
+ * @brief getOverLap
+ * - 根据两距离的偏移计算重合区域
+ * - size0 中的点加上vec后得到size1中的对应的点
+ * @param size0
+ * @param size1
+ * @param vec
+ * @return
+ */
+int getOverLap(const cv::Size &size0,
+               const cv::Size &size1,
+               const cv::Vec<int,2> &vec,
+               cv::Rect &overlap0,
+               cv::Rect &overlap1
+               );
+
+
 }
 
 

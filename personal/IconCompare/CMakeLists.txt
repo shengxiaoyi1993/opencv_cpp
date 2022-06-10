@@ -16,17 +16,17 @@ set(LIST_COM_LIB
 
 # 位于<com_repo>/private_lib的库
 set(LIST_PRIVATE_LIB
-  uvss_label_distance
+#  uvss_label_distance
   )
 
 # 位于<com_repo>/public_lib的库
 set(LIST_PUBLIC_LIB
   #  cppgc
-
+  macro_glog
   )
 
 set(LIST_OPENCV_LIB
-  opencv_basic
+#  opencv_basic
 )
 
 
@@ -55,6 +55,9 @@ SET(PATH_COM_REPO
   CACHE
   STRING
   "Some user-specified option")
+
+include(${PATH_COM_REPO}/public_lib/macro_glog/cmake/macro_glog_option.cmake)
+
 
 STRING(REGEX REPLACE ".+/(.+)\\.*" "\\1" COMPILER_SUFFIX ${CMAKE_C_COMPILER})
 
